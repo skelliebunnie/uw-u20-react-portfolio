@@ -10,7 +10,7 @@ The assignment was to rebuild our portfolio in React. I ended up creating someth
 An interesting experience, all around.
 
 ## Deployment
-![Live on Heroku](https://young-crag-65004.herokuapp.com/)
+[Live on Heroku](https://young-crag-65004.herokuapp.com/)
 
 ## Table of Contents
 * [Installation](#Installation)
