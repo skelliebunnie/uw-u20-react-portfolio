@@ -1,8 +1,8 @@
 # React Portfolio
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Last Commit](https://img.shields.io/static/github/last-commit/skelliebunnie/uw-u20-react-portfolio)
-![Languages](https://img.shields.io/static/github/languages/count/skelliebunnie/uw-u20-react-portfolio)
-![Top Language](https://img.shields.io/static/github/languages/top/skelliebunnie/uw-u20-react-portfolio)
+![Last Commit](https://img.shields.io/github/last-commit/skelliebunnie/uw-u20-react-portfolio)
+![Languages](https://img.shields.io/github/languages/count/skelliebunnie/uw-u20-react-portfolio)
+![Top Language](https://img.shields.io/github/languages/top/skelliebunnie/uw-u20-react-portfolio)
 
 ## Description
 The assignment was to rebuild our portfolio in React. I ended up creating something completely new to practice React and try out Tailwind CSS, since I've been keeping my portfolio on my blog.
