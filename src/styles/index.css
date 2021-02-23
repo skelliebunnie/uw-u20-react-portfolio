@@ -1,0 +1,123 @@
+
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ *  "scripts"
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/base";
+ */
+ @tailwind base;
+
+ /**
+  * This injects any component classes registered by plugins.
+  *
+  * If using `postcss-import`, use this import instead:
+  *
+  * @import "tailwindcss/components";
+  */
+@tailwind components;
+/**
+  * Here you would add any of your custom component classes; stuff that you'd
+  * want loaded *before* the utilities so that the utilities could still
+  * override them.
+  *
+  * Example:
+  *
+  * .btn { ... }
+  * .form-input { ... }
+  *
+  * Or if using a preprocessor or `postcss-import`:
+  *
+  * @import "components/buttons";
+  * @import "components/forms";
+  */
+ 
+ /**
+  * This injects all of Tailwind's utility classes, generated based on your
+  * config file.
+  *
+  * If using `postcss-import`, use this import instead:
+  *
+  * @import "tailwindcss/utilities";
+  */
+@tailwind utilities;
+/**
+  * Here you would add any custom utilities you need that don't come out of the
+  * box with Tailwind.
+  *
+  * Example :
+  *
+  * .bg-pattern-graph-paper { ... }
+  * .skew-45 { ... }
+  *
+  * Or if using a preprocessor or `postcss-import`:
+  *
+  * @import "utilities/background-patterns";
+  * @import "utilities/skew-transforms";
+  */
+
+  /* SITE TITLE: Professor Minty (available from Adobe Typekit only); HEADERS: Nunito; BODY COPY: Montserrat */
+  @import url("https://use.typekit.net/uau7orc.css");
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@400;900&display=swap');
+
+.full-h {
+  min-height: 100vh;
+}
+
+.font-siteTitle {
+  background: linear-gradient(to right, #ed3561, #8645de, #a6d350, #ed3561 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  background-size: 240% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+
+.font-siteTitle:hover,
+.font-siteTitle:focus {
+  background-position: 0 220%;
+  transition: background-position 275ms ease-out;
+  /* text-shadow: 1px 0 0 white, 0 1px 0 white, -1px 0 0 white, 0 -1px 0 white; */
+}
+
+.contact-link .highlight {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.contact-link::hover .highlight {
+  color: yellowgreen;
+}
+
+#profilePhoto {
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+#profilePhoto:hover {
+  filter: grayscale(0%);
+}
+
+#navbar .btn-button {
+  width: 100%;
+}
+
+#navbar .btn-button.active {
+  background-color: rgb(191, 223, 129);
+}
+
+@media (max-width: 767px) {
+  .full-h { min-height: auto; }
+}
+
+@media (min-width: 1024px) {
+  #navbar {
+    min-height: 100vh;
+  }
+}
